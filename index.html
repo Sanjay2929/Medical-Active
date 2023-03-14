@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical Active</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- My custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- SLICK MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SLICK THEME MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bg_blue">
+        <nav class="pb-4">
+            <div class="container">
+                <div class="d-flex align-items-center  gap-lg-5 gap-4 pt-4 justify-content-between">
+                    <h1 class="clr_white fs_24 fw-bold mb-0 ">Medical&nbsp;Active</h1>
+                    <span class="menuicon d-none" id="shownav" onclick="shownav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div id="showul"
+                        class="d-flex align-items-center justify-content-lg-between justify-content-center w-100 flex-column flex-lg-row navbar ">
+                        <ul class="d-flex mb-0 gap-lg-4 gap-md-3 gap-5 flex-column flex-lg-row">
+                            <li><a class="clr_white fs_14 fw-bold" href="#">Home</a></li>
+                            <li><a class="clr_white fs_14 fw-bold" href="#">Product</a></li>
+                            <li><a class="clr_white fs_14 fw-bold" href="#">Pricing</a></li>
+                            <li><a class="clr_white fs_14 fw-bold" href="#">Contact</a></li>
+                        </ul>
+
+                        <ul
+                            class="d-flex align-items-center mb-0 gap-lg-5 gap-md-4 gap-5 me-lg-5 flex-column flex-lg-row">
+                            <li><a class="clr_white fs_14 fw-bold" href="#">Login</a></li>
+                            <li><button class="clr_white bg_orange btn_join_us fs_14 fw-bold ">JOIN&nbsp;US<span
+                                        class="ms-3 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-right-short mb-1"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="white"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="container ">
+                <div class="row justify-content-between align-items-lg-center pt-3">
+                    <div class="col-md-5 col-12 position-relative joinUS_position">
+                        <h3 class="clr_white fw-bold fs_16 mb-4 text-center text-md-start">Join Us</h3>
+                        <h3 class="clr_white fw-bold  fs_58 lh_80 my-2 text-center text-md-start">Meet the Best Doctors
+                        </h3>
+                        <h4 class="clr_white fw-normal  fs_20 mt-4 lh_30 mb-4 text-center text-md-start">We are always
+                            fully focused on helping
+                            your
+                            child
+                            and you</h4>
+                        <div class="d-flex gap-3 mt-2 flex-wrap  justify-content-center justify-content-md-start">
+                            <a class="clr_white fw-bold fs_14 bg_orange border_zero pad_15_40 border_radious_5 "
+                                href="#">Get&nbsp;Quote&nbsp;Now</a>
+                            <a class="clr_white fw-bold fs_14 bg_clr_blue pad_15_40 border_radious_5 border_orange"
+                                href="#">Learn&nbsp;More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-12 position-relative hero_girl object-fit-cover">
+                        <img class="w-100 ps-4  h-100" src="./assets/img/png/hero_girl.png" alt="girl">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <section class="py-5">
+        <div class="container py-sm-5 ">
+            <div class="row px-4 align-items-center py-sm-5 mx-xl-5">
+                <div class="col-md-2 col-4  text-center">
+                    <img class="w-100 px-lg-4 px-md-2 px-sm-4 px-3 py-md-0 py-3 " src="./assets/img/png/hooli.png"
+                        alt="hooli">
+                </div>
+                <div class="col-md-2 col-4  text-center">
+                    <img class="w-100 px-lg-4 px-md-2 px-sm-4 px-3 py-md-0 py-3 " src="./assets/img/png/lya.png"
+                        alt="lya">
+                </div>
+                <div class="col-md-2 col-4  text-center">
+                    <img class="w-100 px-lg-4 px-md-2 px-sm-4 px-3 py-md-0 py-3 "
+                        src="./assets/img/png/section2_img3.png" alt="img">
+                </div>
+                <div class="col-md-2 col-4  text-center">
+                    <img class="w-100 px-lg-4 px-md-2 px-sm-4 px-3 py-md-0 py-3 " src="./assets/img/png/stripe.png"
+                        alt="stripe">
+                </div>
+                <div class="col-md-2 col-4  text-center">
+                    <img class="w-100 px-lg-4 px-md-2 px-sm-4 px-3 py-md-0 py-3 " src="./assets/img/png/aws.png"
+                        alt="aws">
+                </div>
+                <div class="col-md-2 col-4  text-center">
+                    <img class="w-100 px-lg-4 px-md-2 px-sm-4 px-3 py-md-0 py-3 " src="./assets/img/png/robot.png"
+                        alt="robot">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container pb-5">
+            <div class="row align-items-center justify-content-between pb-5">
+                <div class="col-md-4 col-12 mb-md-0 mb-5">
+                    <img class="mb-4" src="./assets/img/png/hr_red-line.png" alt="hr_line">
+                    <h3 class="fs_40 fw-bold clr_dark_blue mt-2 mb-4">Our Department</h3>
+                    <p class="fs_14 fw-normal clr_gray  pt-2 mb-4">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics:
+                        Newtonian mechanics</p>
+                    <a class="fs_14 fw-normal clr_red pt-2 fs_14 fw-bold" href="#">Learn More <img class="ms-2"
+                            src="./assets/img/svg/@none.svg" alt="arrow"></a>
+                </div>
+                <div class="col-xl-6 col-md-7 col-12">
+                    <div class="row  align-items-center">
+                        <div class="col-sm-6 col-12">
+                            <div class="row flex-column">
+                                <div class="col-12 pb-2">
+                                    <div class="pad_35_40 box_shadow">
+                                        <img class="mb-3" src="./assets/img/png/cancer_care.png" alt="cancer_care">
+                                        <h4 class="fs_16 fw-bold mt-1 clr_dark_blue">Cancer Care</h4>
+                                        <img src="./assets/img/png/small_hr_line.png" alt="hr">
+                                        <p class="mb-0 fs_14 fw-normal clr_gray">The gradual
+                                            accumulation of
+                                            information about</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <div class="pad_35_40 box_shadow">
+                                        <img class="mb-3" src="./assets/img/png/online_appoint.png" alt="cancer_care">
+                                        <h4 class="fs_16 fw-bold mt-1 clr_dark_blue">Online Appoinment</h4>
+                                        <img src="./assets/img/png/small_hr_line.png" alt="hr">
+                                        <p class="mb-0 fs_14 fw-normal clr_gray">The gradual
+                                            accumulation of
+                                            information about</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="pad_35_40 box_shadow">
+                                <img class="mb-3" src="./assets/img/png/book_now.png" alt="cancer_care">
+                                <h4 class="fs_16 fw-bold mt-1 clr_dark_blue">Book now</h4>
+                                <img src="./assets/img/png/small_hr_line.png" alt="hr">
+                                <p class="mb-0 fs_14 fw-normal clr_gray">The gradual
+                                    accumulation of
+                                    information about</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <Section>
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-md-center py-sm-5">
+                <div class="col-sm-6 col-12 object-fit-cover">
+                    <img class="w-100 pe-lg-5 h-100" src="./assets/img/png/Leading_Medicine.png" alt="Leading_Medicine">
+                </div>
+                <div class="col-sm-5 col-12">
+                    <img class="mb-4 mt-sm-0 mt-4" src="./assets/img/png/hr_red-line.png" alt="hr_line">
+                    <h3 class="fs_40 fw-bold clr_dark_blue mt-2 mb-4">Leading Medicine</h3>
+                    <p class="fs_14 fw-normal clr_gray  pt-2 mb-4">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics:
+                        Newtonian mechanics</p>
+                    <a class="fs_14 fw-normal clr_red pt-2 fs_14 fw-bold" href="#">Learn More <img class="ms-2"
+                            src="./assets/img/svg/@none.svg" alt="arrow"></a>
+
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="row justify-content-between align-items-md-center py-sm-5 flex-wrap-reverse">
+                    <div class="col-sm-5 col-12">
+                        <img class="mb-4 mt-sm-0 mt-4" src="./assets/img/png/hr_red-line.png" alt="hr_line">
+                        <h3 class="fs_40 fw-bold clr_dark_blue mt-2 mb-4">Our Activity</h3>
+                        <p class="fs_14 fw-normal clr_gray  pt-2 mb-4">Problems trying to resolve the conflict between
+                            the two major realms of Classical physics:
+                            Newtonian mechanics</p>
+                        <a class="fs_14 fw-normal clr_red pt-2 fs_14 fw-bold" href="#">Learn More <img class="ms-2"
+                                src="./assets/img/svg/@none.svg" alt="arrow"></a>
+
+                    </div>
+                    <div class="col-sm-6 col-12 object-fit-cover">
+                        <img class="w-100  h-100" src="./assets/img/png/Video_card.png" alt="Video_card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <section class="bg_darkblue pb-md-5">
+        <div class="container py-sm-5 mb-5">
+            <div class="py-5 mt-5 ">
+                <h5 class="fw-bold fs_14 clr_orange mb-2">Practice Advice</h5>
+                <h4 class="fs_40 fw-bold clr_white mb-2">Our Doctors Specialize in you</h4>
+                <h4 class="fs_14 fw-normal clr_white mb-0 lh_20">
+                    <span class="fs_14 fw-normal clr_white mb-0">Problems trying to resolve the conflict between
+                    </span>the two major realms of Classical physics: Newtonian mechanics
+                </h4>
+
+            </div>
+            <div class="row pb-5 justify-content-center">
+                <div class="col-lg-4 col-sm-6 col-12 minus_mx_6 pt-3 ">
+                    <div class="bg_white">
+                        <div class="d-flex flex-column">
+                            <img class="w-100" src="./assets/img/png/best_dental.png" alt="best_dental">
+                            <div class="px-4 py-4">
+                                <div class="d-flex align-items-center justify-content-between mb-2 ">
+                                    <h3 class="mb-0 fw-bold fs_14 clr_blue ">Best dental surgeons</h3>
+                                    <div class="d-flex align-items-center bg_darkblue py-1 px-2 br_20">
+                                        <img src="./assets/img/png/star.png" alt="star">
+                                        <p class="mb-0 ms-2 fs_12 fw-normal clr_white">4.9</p>
+                                    </div>
+                                </div>
+                                <h3 class="fw-bold fs_16 clr_dark_blue mb-3">Cancer Care</h3>
+                                <p class="fs_14 fw-normal clr_gray mb-2">We focus on ergonomics and meeting
+                                    you where you work. It's only a
+                                    keystroke away.</p>
+                                <div class="d-flex align-items-center pt-1 mb-3">
+                                    <img src="./assets/img/png/download.png" alt="download">
+                                    <h5 class="fs_14 fw-bold mb-0 clr_gray">15 Sales</h5>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="clr_light_gray fw-bold fs_16 ">$16.48</h5>
+                                    <h5 class="fw-bold fs_16  clr_blue">$6.48</h5>
+                                </div>
+                                <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/clock.png" alt="clock">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">22hr&nbsp;30min</h5>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/lesson.png" alt="lesson">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">64&nbsp;Lessons</h5>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/progress.png" alt="progress">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">Progress</h5>
+                                    </div>
+                                </div>
+                                <button
+                                    class="fw-bold fs_14 clr_blue btn_pad_10_20 br_30 border_blue bg-white me-2 mb-2">Learn
+                                    More <img src="./assets/img/png/blue_arrow.png" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 minus_mx_6 pt-3 ">
+                    <div class="bg_white">
+                        <div class="d-flex flex-column">
+                            <img class="w-100 " src="./assets/img/png/painless_procedures.png" alt="procedure">
+                            <div class="px-4 py-4">
+                                <div class="d-flex align-items-center justify-content-between mb-2 ">
+                                    <h3 class="mb-0 fw-bold fs_14 clr_blue ">Painless procedures</h3>
+                                    <div class="d-flex align-items-center bg_darkblue py-1 px-2 br_20">
+                                        <img src="./assets/img/png/star.png" alt="star">
+                                        <p class="mb-0 ms-2 fs_12 fw-normal clr_white">4.9</p>
+                                    </div>
+                                </div>
+                                <h3 class="fw-bold fs_16 clr_dark_blue mb-3">Health Queries</h3>
+                                <p class="fs_14 fw-normal clr_gray mb-2">We focus on ergonomics and meeting
+                                    you where you work. It's only a
+                                    keystroke away.</p>
+                                <div class="d-flex align-items-center pt-1 mb-3">
+                                    <img src="./assets/img/png/download.png" alt="download">
+                                    <h5 class="fs_14 fw-bold mb-0 clr_gray">15 Sales</h5>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="clr_light_gray fw-bold fs_16 ">$16.48</h5>
+                                    <h5 class="fw-bold fs_16  clr_blue">$6.48</h5>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/clock.png" alt="clock">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">22hr&nbsp;30min</h5>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/lesson.png" alt="lesson">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">64&nbsp;Lessons</h5>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/progress.png" alt="progress">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">Progress</h5>
+                                    </div>
+                                </div>
+                                <button
+                                    class="fw-bold fs_14 clr_blue btn_pad_10_20 br_30 border_blue bg-white me-2 mb-2">Learn
+                                    More
+                                    <img src="./assets/img/png/blue_arrow.png" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 minus_mx_6 pt-3 ">
+                    <div class="bg_white">
+                        <div class="d-flex flex-column">
+                            <img class="w-100" src="./assets/img/png/Quick_examination.png" alt="examination">
+                            <div class="px-4 py-4">
+                                <div class="d-flex align-items-center justify-content-between mb-2 ">
+                                    <h3 class="mb-0 fw-bold fs_14 clr_blue ">Book now</h3>
+                                    <div class="d-flex align-items-center bg_darkblue py-1 px-2 br_20">
+                                        <img src="./assets/img/png/star.png" alt="star">
+                                        <p class="mb-0 ms-2 fs_12 fw-normal clr_white">4.9</p>
+                                    </div>
+                                </div>
+                                <h3 class="fw-bold fs_16 clr_dark_blue mb-3">Quick examination</h3>
+                                <span class="fs_14 fw-normal clr_gray mb-2">We focus on ergonomics and meeting
+                                    you where you work. It's only a
+                                    keystroke away.</span>
+                                <div class="d-flex align-items-center pt-1 mb-3">
+                                    <img src="./assets/img/png/download.png" alt="download">
+                                    <h5 class="fs_14 fw-bold mb-0 clr_gray">15 Sales</h5>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <h5 class="clr_light_gray fw-bold fs_16 ">$16.48</h5>
+                                    <h5 class="fw-bold fs_16  clr_blue">$6.48</h5>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/clock.png" alt="clock">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">22hr&nbsp;30min</h5>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/lesson.png" alt="lesson">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">64&nbsp;Lessons</h5>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <img src="./assets/img/png/progress.png" alt="progress">
+                                        <h5 class="mb-0 fs_12 fw-normal clr_gray ms-2 ">Progress</h5>
+                                    </div>
+                                </div>
+                                <button
+                                    class="fw-bold fs_14 clr_blue btn_pad_10_20 br_30 border_blue bg-white me-2 mb-2">Learn
+                                    More
+                                    <img src="./assets/img/png/blue_arrow.png" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5 mb-sm-5">
+            <div class="py-5 mt-sm-5 ">
+                <h5 class="fw-bold fs_14 clr_orange mb-2">Practice Advice</h5>
+                <h4 class="fs_40 fw-bold clr_dark_blue mb-2">Our Doctors Specialize in you</h4>
+                <h4 class="fs_14 fw-normal clr_gray mb-0 lh_20">
+                    <span class="fs_14 fw-normal clr_gray mb-0">Problems trying to resolve the conflict between
+                    </span>the two major realms of Classical physics: Newtonian mechanics
+                </h4>
+
+            </div>
+            <div class="row center">
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center p-sm-5  py-4 px-3 mx-xl-5 mx-2 my-2">
+                        <img class="mb-3" src="./assets/img/png/stars_group.png" alt="stars">
+                        <p class="fs_14 fw-normal clr_gray text-center mb-4">Slate helps you see
+                            how many more days
+                            you need to work to
+                            reach your financial
+                            goal for the month
+                            and year.</p>
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./assets/img/png/regina_miles.png" alt="men">
+                            <div class="ms-3">
+                                <h3 class="fw-bold fs_14 clr_orange mb-0 lh_24">Regina Miles</h3>
+                                <h5 class="fs_12 fw-normal clr_dark_blue mb-0 lh_16">Designer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center p-sm-5 py-4 px-3 mx-xl-5 mx-2 my-2">
+                        <img class="mb-3" src="./assets/img/png/stars_group.png" alt="stars">
+                        <p class="fs_14 fw-normal clr_gray text-center mb-4">Slate helps you see
+                            how many more days
+                            you need to work to
+                            reach your financial
+                            goal for the month
+                            and year.</p>
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./assets/img/png/regina_miles2.png" alt="men">
+                            <div class="ms-3">
+                                <h3 class="fw-bold fs_14 clr_orange mb-0 lh_24">Regina Miles</h3>
+                                <h5 class="fs_12 fw-normal clr_dark_blue mb-0 lh_16">Designer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-column align-items-center p-sm-5  py-4 px-3 mx-xl-5 mx-2 my-2">
+                        <img class="mb-3" src="./assets/img/png/stars_group.png" alt="stars">
+                        <p class="fs_14 fw-normal clr_gray text-center mb-4">Slate helps you see
+                            how many more days
+                            you need to work to
+                            reach your financial
+                            goal for the month
+                            and year.</p>
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./assets/img/png/regina_miles3.png" alt="men">
+                            <div class="ms-3">
+                                <h3 class="fw-bold fs_14 clr_orange mb-0 lh_24">Regina Miles</h3>
+                                <h5 class="fs_12 fw-normal clr_dark_blue mb-0 lh_16">Designer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="d-flex flex-column align-items-center pt-5">
+                <h5 class="fw-bold fs_14 clr_orange pt-5">Newsletter</h5>
+                <h3 class="fw-bold fs_40 clr_dark_blue">JOIN US</h3>
+                <h4 class="fs_14 fw-normal clr_gray mb-0 lh_20 text-center pb-2">Problems trying to resolve the conflict
+                    between
+                    <span class="fs_14 fw-normal clr_gray mb-0 text-center">the two major realms of Classical physics:
+                        Newtonian mechanics
+                    </span>
+                </h4>
+            </div>
+            <div class="d-flex  justify-content-center flex-sm-row flex-column py-5 my-sm-4">
+                <input type="text" placeholder="Your Email"
+                    class="fw-normal fs_14 clr_gray pad15_22 w-100 max_w520 input_border mb-sm-5 mb-4">
+                <button class="fw-normal fs_14 clr_white bg_orange pad15_22  sub_btn mb-sm-5">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg_darkblue">
+            <div class="container ">
+                <div class="row  pb-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="row pt-5">
+                            <div class="col-6 ">
+                                <ul class="d-flex flex-column clr_white fw-bold">
+                                    <li class="fs_16 mb-3 ">Company&nbsp;Info</li>
+                                    <li class="fs_14 lh_24 mb-2 mt-1">About&nbsp;Us</li>
+                                    <li class="fs_14 lh_24 mb-2">We&nbsp;are&nbsp;hiring</li>
+                                    <li class="fs_14 lh_24 mb-2">Blog</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="d-flex flex-column clr_white fw-bold">
+                                    <li class="fs_16 mb-3">Legal</li>
+                                    <li class="fs_14 lh_24 mb-2 mt-1">About&nbsp;Us</li>
+                                    <li class="fs_14 lh_24 mb-2">We&nbsp;are&nbsp;hiring</li>
+                                    <li class="fs_14 lh_24 mb-2">Blg</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="row pt-5">
+                            <div class="col-6">
+                                <ul class="d-flex flex-column clr_white fw-bold">
+                                    <li class="fs_16 mb-3">Features</li>
+                                    <li class="fs_14 lh_24 mb-2 mt-1">Business&nbsp;Marketing</li>
+                                    <li class="fs_14 lh_24 mb-2">User&nbsp;Analytic</li>
+                                    <li class="fs_14 lh_24 mb-2">Unlimited&nbsp;Support</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="d-flex flex-column clr_white fw-bold">
+                                    <li class="fs_16 mb-3">Resources</li>
+                                    <li class="fs_14 lh_24 mb-2 mt-1">IOS&nbsp;&&nbsp;Android</li>
+                                    <li class="fs_14 lh_24 mb-2">Watch&nbsp;a&nbsp;Demo</li>
+                                    <li class="fs_14 lh_24 mb-2">API</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pt-5">
+                        <ul class="d-flex flex-column clr_white fw-bold">
+                            <li class="fs_16 mb-3">Get&nbsp;In&nbsp;Touch</li>
+                            <li class="fs_14 lh_24 mb-2 mt-1 text-center">(480)&nbsp;555-0103</li>
+                            <li class="fs_14 lh_24 mb-2 text-center">4517 Washington Ave. Manchester, Kentucky 39495
+                            </li>
+                            <li class="fs_14 lh_24 mb-2 text-center">debra.holt@example.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-sm-0 pt-4 flex-sm-row flex-column">
+                <h4 class="mb-0 fs_14 fw-bold clr_gray py-sm-4">Made With Love By Figmaland All Right Reserved</h4>
+                <div class="d-flex gap-4 py-4">
+                    <img src="./assets/img/png/fb.png" alt="fb">
+                    <img src="./assets/img/png/insta.png" alt="insta">
+                    <img src="./assets/img/png/twitter.png" alt="twitter">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script>
+        function shownav() {
+            document.getElementById("showul").classList.toggle("nav_left0")
+        }
+    </script>
+    <!--L QUERRY MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--SLICK MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.center').slick({
+            Infinity: true,
+            speed: 300,
+            slideToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            centerMode: true,
+            nextArrow: ".next",
+            prevArrow: ".back",
+            slidesToShow: 3,
+            responsive: [
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
