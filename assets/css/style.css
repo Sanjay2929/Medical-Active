@@ -70,9 +70,7 @@
     border: 1px solid #FC724D;
 }
 
-.lh_80 {
-    line-height: 80px;
-}
+
 
 .lh_30 {
     line-height: 30px;
@@ -117,34 +115,42 @@
     border: 1px solid #0061FF;
 
 }
-.lh_24{
+
+.lh_24 {
     line-height: 24px;
 }
-.lh_16{
+
+.lh_16 {
     line-height: 16px;
 }
 
-.pad15_22{
+.pad15_22 {
     padding: 15px 22px;
 }
-.max_w520{
-    max-width: 520px;    
-    
+
+.max_w520 {
+    max-width: 520px;
+
 }
-.input_border{
+
+.input_border {
     border: 1px solid #E6E6E6;
     border-radius: 5px 0px 0px 5px;
     outline: none;
 }
 
-.sub_btn{
+.sub_btn {
     border: 1px solid #E6E6E6;
     border-radius: 0px 5px 5px 0px;
 }
 
+ul li {
+    cursor: pointer;
+}
 
-
-
+.pointer_event{
+    cursor: pointer;
+}
 
 
 
@@ -191,6 +197,10 @@
     .minus_mx_6 {
         margin-left: -6px;
         margin-right: -6px;
+    }
+
+    .lh_80 {
+        line-height: 80px;
     }
 }
 
