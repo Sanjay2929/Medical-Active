@@ -151,7 +151,9 @@ ul li {
 .pointer_event{
     cursor: pointer;
 }
-
+.overflow_hidden{
+    overflow: hidden;
+}
 
 
 
